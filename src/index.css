@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+  --primary: #838d8a;
+  --secondary:#e98074;
+  --third:#cc9e5d ;
+  --background:#eae7dc;
+  --error: #e85a4f;
+}
+
+
+body{
+  font-family: "Roboto";
+  color: var(--secondary);
+  background:url("img/12.jpg");
+}
+.App{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.title h1{
+  color: var(--third);
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  font-weight: bold;
+  /* text-align: left; */
+}
+.title h2, .title p{
+  text-align: center;
+}
+
+.title p{
+  color: var(--primary);
+}
+.title h2{
+  margin-top: 60px;
+  font-size: 2.6rem;
+}
+
+.hero__content h3{
+  color:#838d8a
+}
+
+
+form{
+  margin: 30px auto 10px;
+  text-align: center;
+}
+label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+label{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+label:hover{
+  background: var(--primary);
+  color: white;
+}
+.output{
+  height: 60px;
+  font-size: 0.8rem;
+}
+.error{
+  color: var(--error);
+}
+
+.progress-bar{
+  height: 5px;
+  background: var(--primary);
+  margin-top: 20px;
+}
+
+
+.img-grid{
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.img-wrap{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.8;
+}
+.img-wrap img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.backdrop img{
+  display: block;
+  max-width: 60%;
+  max-height: 80%;
+  margin: 60px auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 3px solid white;
+}
+
+.hero__content{
+justify-content: right;
+  display: flex;
+  text-align: right;
+  background-color: white;
+
+}
+.hero__content h1{
+  color: var(--third);
+  align-items: right;
+  justify-content: right;
+  float:right;
+}
+h1{
+  color: var(--third);}
